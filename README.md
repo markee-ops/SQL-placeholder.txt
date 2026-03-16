@@ -57,5 +57,12 @@ This screenshot highlights the orphaned transaction audit, which identifies tran
 **Summary:**  
 This screenshot shows the inventory turnover ratio analysis, a key metric that measures how efficiently inventory is being cycled through the warehouse. A higher turnover ratio indicates strong product movement and optimized stock levels, while a lower ratio can signal overstocking, slow‑moving items, or capital tied up in excess inventory. This metric is essential for evaluating operational efficiency and guiding replenishment, purchasing, and storage decisions.
 
+## 🖼️ Screenshot 6 — Warehouse Zone Movement Summary
+
+![Warehouse Zone Movement Summary](QUERY_SIX_WAREHOUSE_ZONE_MOVEMENT_SUMMARY.png)
+
+**Summary:**  
+This screenshot shows the warehouse zone movement summary, breaking down product flow by physical warehouse zones. It highlights which zones experience the highest traffic, which areas are underutilized, and how movement patterns shift across inbound, outbound, and internal transfers. This analysis supports decisions around layout optimization, labor allocation, congestion reduction, and overall warehouse efficiency.
+
 
 
