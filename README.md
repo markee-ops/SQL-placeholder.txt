@@ -43,5 +43,12 @@ This screenshot represents the SKU movement velocity analysis. It highlights how
 **Summary:**  
 This screenshot shows the category‑level movement flow analysis. It identifies which product categories move the most through the warehouse and breaks their activity into inbound and outbound movement. This helps reveal which categories drive the highest operational load, where warehouse strain is concentrated, and how category‑level demand patterns shape storage, replenishment, and labor planning.
 
+## 🖼️ Screenshot 4 — Orphaned Transaction Audit
+
+![Orphaned Transaction Audit](QUERY_FOUR_ORPHANED_TRANSACTION_AUDIT.png)
+
+**Summary:**  
+This screenshot highlights the orphaned transaction audit, which identifies transactions that do not have matching parent records. These “orphaned” entries often signal data integrity issues such as incomplete loads, failed joins, or mismatched foreign keys. This audit is essential for maintaining clean warehouse data, ensuring accurate reporting, and preventing downstream analytical errors.
+
 
 
