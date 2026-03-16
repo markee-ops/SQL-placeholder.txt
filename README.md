@@ -29,3 +29,10 @@ The visuals included in this repository summarize key findings and show how SQL 
 **Summary:**  
 This screenshot represents the outbound SKU velocity analysis. It highlights which products are moving fastest through the warehouse, helping identify high‑velocity SKUs that require priority slotting, faster replenishment, or dedicated handling strategies. This visual translates raw SQL output into operational insight that supports inventory planning and warehouse flow optimization.
 
+## 🖼️ Screenshot 2 — SKU Movement Velocity
+
+![SKU Movement Velocity](QUERY_TWO_SKU_MOVEMENT_VELOCITY.png)
+
+**Summary:**  
+This screenshot represents the SKU movement velocity analysis. It highlights how frequently each SKU moves through the warehouse, allowing you to identify fast‑moving, slow‑moving, and stagnant products. This insight supports decisions around slotting, replenishment cycles, storage optimization, and overall warehouse flow efficiency.
+
