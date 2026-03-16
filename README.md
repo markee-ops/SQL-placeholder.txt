@@ -50,5 +50,12 @@ This screenshot shows the category‑level movement flow analysis. It identifies
 **Summary:**  
 This screenshot highlights the orphaned transaction audit, which identifies transactions that do not have matching parent records. These “orphaned” entries often signal data integrity issues such as incomplete loads, failed joins, or mismatched foreign keys. This audit is essential for maintaining clean warehouse data, ensuring accurate reporting, and preventing downstream analytical errors.
 
+## 🖼️ Screenshot 5 — Inventory Turnover Ratio
+
+![Inventory Turnover Ratio](QUERY_FIVE_INVENTORY_TURNOVER_RATIO.png)
+
+**Summary:**  
+This screenshot shows the inventory turnover ratio analysis, a key metric that measures how efficiently inventory is being cycled through the warehouse. A higher turnover ratio indicates strong product movement and optimized stock levels, while a lower ratio can signal overstocking, slow‑moving items, or capital tied up in excess inventory. This metric is essential for evaluating operational efficiency and guiding replenishment, purchasing, and storage decisions.
+
 
 
