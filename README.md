@@ -22,5 +22,5 @@ The visuals included in this repository summarize key findings and show how SQL 
 - Business Logic Development  
 - Operational KPI Interpretation  
 
-
+QUERY_ ONE_OUTBOUND_ SKU_ VELOCITY_ REPORT.png
 
