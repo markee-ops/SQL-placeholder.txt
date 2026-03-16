@@ -21,9 +21,5 @@ The visuals included in this repository summarize key findings and show how SQL 
 - Data Cleaning & Filtering  
 - Business Logic Development  
 - Operational KPI Interpretation  
-## 🖼️ Screenshot 1 — Outbound SKU Velocity Report
 
-![Outbound SKU Velocity](QUERY_ONE_OUTBOUND_SKU_VELOCITY_REPORT.png)
 
-**Summary:**  
-This screenshot represents the outbound SKU velocity analysis. It highlights which products are moving fastest through the warehouse, helping identify high‑velocity SKUs that require priority slotting, faster replenishment, or dedicated handling strategies. This visual translates raw SQL output into operational insight that supports inventory planning and warehouse flow optimization.
