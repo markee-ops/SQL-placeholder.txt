@@ -64,5 +64,12 @@ This screenshot shows the inventory turnover ratio analysis, a key metric that m
 **Summary:**  
 This screenshot shows the warehouse zone movement summary, breaking down product flow by physical warehouse zones. It highlights which zones experience the highest traffic, which areas are underutilized, and how movement patterns shift across inbound, outbound, and internal transfers. This analysis supports decisions around layout optimization, labor allocation, congestion reduction, and overall warehouse efficiency.
 
+## 🖼️ Screenshot 7 — Daily Handler Productivity Report
+
+![Daily Handler Productivity Report](QUERY_SEVEN_DAILY_HANDLER_PRODUCTIVITY_REPORT.png)
+
+**Summary:**  
+This screenshot displays the daily handler productivity report, breaking down how many units each handler processed within a given day. It highlights top performers, identifies potential bottlenecks, and reveals workload distribution across the team. This metric is essential for labor planning, performance coaching, and ensuring operational throughput remains consistent across shifts.
+
 
 
