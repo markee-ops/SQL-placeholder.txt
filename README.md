@@ -78,6 +78,13 @@ This screenshot displays the daily handler productivity report, breaking down ho
 **Summary:**  
 This screenshot breaks down handler productivity at the SKU level, showing which products each handler processes most efficiently. It highlights specialization patterns, identifies mismatches between handlers and product types, and reveals opportunities for targeted training or optimized task assignment. This analysis connects labor performance directly to SKU‑level operational flow.
 
+## 🖼️ Screenshot 9 — Average Daily Movements per Handler
+
+![Average Daily Movements per Handler](QUERY_NINE_AVERAGE_DAILY_MOVEMENTS_PER_HANDLER.png)
+
+**Summary:**  
+This screenshot shows the average number of daily movements completed by each handler. It highlights workload distribution, identifies consistently high‑performing handlers, and reveals potential imbalances across the team. This metric is essential for labor planning, shift optimization, and ensuring operational throughput remains stable across the warehouse.
+
 
 
 
