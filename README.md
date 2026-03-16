@@ -85,6 +85,13 @@ This screenshot breaks down handler productivity at the SKU level, showing which
 **Summary:**  
 This screenshot shows the average number of daily movements completed by each handler. It highlights workload distribution, identifies consistently high‑performing handlers, and reveals potential imbalances across the team. This metric is essential for labor planning, shift optimization, and ensuring operational throughput remains stable across the warehouse.
 
+## 🖼️ Screenshot 10 — Daily Movement Count
+
+![Daily Movement Count](QUERY_TEN_DAILY_MOVEMENT_COUNT.png)
+
+**Summary:**  
+This screenshot shows the total daily movement count across all handlers and SKUs. It provides a high‑level view of warehouse activity volume, revealing peak days, operational surges, and overall throughput trends. This metric is essential for capacity planning, labor scheduling, and understanding how daily demand patterns shape warehouse performance.
+
 
 
 
