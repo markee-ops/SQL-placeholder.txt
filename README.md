@@ -36,3 +36,10 @@ This screenshot represents the outbound SKU velocity analysis. It highlights whi
 **Summary:**  
 This screenshot represents the SKU movement velocity analysis. It highlights how frequently each SKU moves through the warehouse, allowing you to identify fast‑moving, slow‑moving, and stagnant products. This insight supports decisions around slotting, replenishment cycles, storage optimization, and overall warehouse flow efficiency.
 
+## 🖼️ Screenshot 3 — Category Movement Flow
+
+![Category Movement Flow](QUERY_THREE_CATEGORY_MOVEMENT_FLOW.png)
+
+**Summary:**  
+This screenshot shows the category‑level movement flow analysis. It identifies which product categories move the most through the warehouse and breaks their activity into inbound and outbound movement. This helps reveal which categories drive the highest operational load, where warehouse strain is concentrated, and how category‑level demand patterns shape storage, replenishment, and labor planning.
+
