@@ -71,6 +71,13 @@ This screenshot shows the warehouse zone movement summary, breaking down product
 **Summary:**  
 This screenshot displays the daily handler productivity report, breaking down how many units each handler processed within a given day. It highlights top performers, identifies potential bottlenecks, and reveals workload distribution across the team. This metric is essential for labor planning, performance coaching, and ensuring operational throughput remains consistent across shifts.
 
+## 🖼️ Screenshot 8 — Handler Productivity by SKU
+
+![Handler Productivity by SKU](QUERY_EIGHT_HANLDER_PRODUCTIVITY_SKU.png)
+
+**Summary:**  
+This screenshot breaks down handler productivity at the SKU level, showing which products each handler processes most efficiently. It highlights specialization patterns, identifies mismatches between handlers and product types, and reveals opportunities for targeted training or optimized task assignment. This analysis connects labor performance directly to SKU‑level operational flow.
+
 
 
 
