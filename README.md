@@ -93,7 +93,129 @@ This screenshot shows the average number of daily movements completed by each ha
 This screenshot shows the total daily movement count across all handlers and SKUs. It provides a high‑level view of warehouse activity volume, revealing peak days, operational surges, and overall throughput trends. This metric is essential for capacity planning, labor scheduling, and understanding how daily demand patterns shape warehouse performance.
 
 
+# AP Exception Engine — SQL Queries
+
+## Query 1 — Unpaid Invoices
+
+![Unpaid Invoices](Screenshots/01_UnpaidInvoices.png)
+
+**Summary:**  
+This query identifies all invoices that have not been paid by checking for records where the payment status is still marked as Open.  
+It highlights outstanding liabilities, shows how many days each invoice is past due, and helps AP teams prioritize which invoices require immediate attention.  
+This is the core visibility report for managing cash flow and vendor obligations.
+
+## Query 2 — Missing Receipts (Invoice-Level)
+
+![Missing Receipts](Screenshots/02_MissingReceipts.png)
+
+**Summary:**  
+This query identifies invoices that have been submitted by vendors but do not have a corresponding receipt in the system.  
+It flags potential three‑way match failures where the invoice exists and the PO exists, but receiving has not confirmed the goods.  
+This protects the business from paying vendors for items that were never received and highlights breakdowns between AP and Receiving.
+
+
+## Query 3 — Overbilled Invoices
+
+![Overbilled Invoices](Screenshots/03_OverbilledInvoices.png)
+
+**Summary:**  
+This query identifies invoices where the billed amount exceeds the purchase order amount.  
+It flags potential overcharges, vendor billing errors, or mismatches between contracted pricing and actual invoicing.  
+This protects the business from paying more than the agreed PO value and highlights vendors or SKUs that may require pricing review or escalation.
+
+## Query 4 — Duplicate Invoice Check (Vendor-Scoped)
+
+![Duplicate Invoice Check](Screenshots/04_DuplicateInvoiceCheck.png)
+
+**Summary:**  
+This query identifies potential duplicate invoices **for the same vendor**, ensuring that only true duplicates are flagged.  
+It compares invoice numbers, vendor IDs, invoice dates, and amounts to detect cases where the same invoice may have been submitted more than once.  
+This protects the business from accidental double‑payments and highlights vendors with recurring billing inconsistencies or data entry errors.
+
+## Query 5 — Overdue Invoices
+
+![Overdue Invoices](Screenshots/05_OverdueInvoices.png)
+
+**Summary:**  
+This query identifies all invoices that are past their due date based on vendor payment terms.  
+It calculates the number of days overdue and highlights invoices that require immediate action to avoid late fees, strained vendor relationships, or service interruptions.  
+This report helps AP prioritize payments, manage cash flow, and maintain strong vendor partnerships.
+
+## Query 6 — Missing Receipt (PO-Level)
+
+![Missing Receipt PO-Level](Screenshots/06_MissingReceiptPOLvl.png)
+
+**Summary:**  
+This query identifies purchase orders where a receipt has not been recorded, even though an invoice has already been submitted.  
+It highlights three‑way match failures where the PO exists and the invoice exists, but Receiving has not confirmed the goods.  
+This prevents premature or incorrect payments, protects against paying for unreceived items, and exposes operational delays between Receiving and AP.
+
+## Query 6 — Missing Receipts (PO Exception)
+
+![Missing Receipts PO Exception](Screenshots/06_MissingReceipts_POException.png)
+
+**Summary:**  
+This query identifies purchase orders where an invoice has been submitted but no receipt has been recorded in the system.  
+It exposes PO‑level match failures where the PO exists and the invoice exists, but Receiving has not confirmed the goods.  
+This prevents premature or incorrect payments, protects against paying for unreceived items, and highlights operational gaps between Receiving and AP.
+
+## Query 7 — Aging Buckets
+
+![Aging Buckets](Screenshots/07_AgingBuckets.png)
+
+**Summary:**  
+This query groups all open invoices into standard AP aging buckets to show how long each invoice has been outstanding.  
+It breaks invoices into 0–30, 31–60, 61–90, and 90+ day categories, giving leadership a clear view of overdue liabilities and payment risk.  
+This report is essential for cash‑flow planning, vendor negotiations, and monthly close activities.
 
 
 
+## Query 8 — PaymentCycleTime.sql1
 
+![Payment Cycle Time](Screenshots/08_PaymentCycleTime.sql1.png)
+
+**Summary:**  
+This query calculates how long it takes for an invoice to be paid, measured from the invoice date to the payment date.  
+It uses a two‑stage CTE structure:  
+- **Base CTE** pulls clean invoice and vendor data for all invoices with a valid payment date.  
+- **Metric CTE** computes payment cycle days and assigns each invoice to a cycle bucket (0–30, 31–60, 61–90, 90+).  
+
+This metric is a core AP performance indicator used for vendor scorecards, SLA tracking, and cash‑flow optimization.
+
+## Query 08 (Version 2) — PaymentCycleTime.sql2
+
+![Payment Cycle Time](Screenshots/08_PaymentCycleTime.sql2.png)
+
+**Summary:**  
+This is the second version of the Payment Cycle Time query. It calculates the number of days between the invoice date and the payment date, then assigns each invoice to a cycle bucket (0–30, 31–60, 61–90, 90+).  
+It uses a Base CTE to pull invoice and vendor data, and a Metric CTE to compute payment cycle days and bucket logic.  
+This version is optimized for clean documentation and fits in a single screenshot for clear presentation.
+
+## Query 09 (Version 1) — APAutomationReadinessScore.sql (1)
+
+## Query 09 (Version 1) — APAutomationReadinessScore.sql (1)
+
+## Query 09 (Version 1) — APAutomationReadinessScore.sql (1)
+
+![AP Automation Readiness Score](Screenshots/09_APAutomationReadinessScore_sql1.png)
+
+**Summary:**  
+This version of the AP Automation Readiness Score evaluates how prepared each invoice is for straight‑through automation.  
+It analyzes four core dimensions:  
+- **Invoice completeness** (required fields present)  
+- **Vendor data quality** (valid vendor information)  
+- **Exception frequency** (how often the invoice triggered issues)  
+- **Payment accuracy** (whether the payment matched expected values)  
+
+The Base CTE pulls invoice, payment, and exception data.  
+The scoring logic then assigns a readiness value that reflects how easily each transaction could be automated in a real AP workflow.  
+This is the baseline scoring model used before refinements were introduced in Version 2.
+
+## Query 09 (Version 2) — APAutomationReadinessScore.sql (2)
+
+![AP Automation Readiness Score](Screenshots/09_APAutomationReadinessScore_sql2.png)
+
+**Summary:**  
+This refined version of the AP Automation Readiness Score improves the logic from Version 1 by tightening exception thresholds, adjusting completeness weighting, and applying more consistent vendor data validation.  
+The Base CTE still pulls invoice, payment, and exception data, but the scoring model is enhanced to better reflect real‑world AP automation readiness.  
+This version produces a more accurate and reliable readiness score for operational analysis and presentation.
