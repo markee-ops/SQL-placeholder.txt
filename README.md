@@ -104,7 +104,7 @@ This query identifies all invoices that have not been paid by checking for recor
 It highlights outstanding liabilities, shows how many days each invoice is past due, and helps AP teams prioritize which invoices require immediate attention.  
 This is the core visibility report for managing cash flow and vendor obligations.
 
-![Missing Receipts](Screenshots/02_MissingReceipts.png)
+![Missing Reciepts](Screenshots/02_MissingReciepts.png)
 
 Screenshots/02_MissingReciepts.png
 
