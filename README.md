@@ -116,7 +116,7 @@ This protects the business from paying vendors for items that were never receive
 
 ## Query 3 — Overbilled Invoices
 
-![Overbilled Invoices](Screenshots/03_OverbilledInvoices.png)
+![Overbilled Invoices](Screenshots/03_OverbilledInvoices_InvoiceAmount_POAmount.png)
 
 **Summary:**  
 This query identifies invoices where the billed amount exceeds the purchase order amount.  
@@ -133,8 +133,7 @@ It compares invoice numbers, vendor IDs, invoice dates, and amounts to detect ca
 This protects the business from accidental double‑payments and highlights vendors with recurring billing inconsistencies or data entry errors.
 
 ## Query 5 — Overdue Invoices
-
-![Overdue Invoices](Screenshots/05_OverdueInvoices.png)
+![Overdue Invoices](Screenshots/05_OverDueInvoices.png)
 
 **Summary:**  
 This query identifies all invoices that are past their due date based on vendor payment terms.  
@@ -143,21 +142,13 @@ This report helps AP prioritize payments, manage cash flow, and maintain strong 
 
 ## Query 6 — Missing Receipt (PO-Level)
 
-![Missing Receipt PO-Level](Screenshots/06_MissingReceiptPOLvl.png)
+![Missing Receipts PO Exception](Screenshots/06_MissingReceipts_POException.png)
 
 **Summary:**  
 This query identifies purchase orders where a receipt has not been recorded, even though an invoice has already been submitted.  
 It highlights three‑way match failures where the PO exists and the invoice exists, but Receiving has not confirmed the goods.  
 This prevents premature or incorrect payments, protects against paying for unreceived items, and exposes operational delays between Receiving and AP.
 
-## Query 6 — Missing Receipts (PO Exception)
-
-![Missing Receipts PO Exception](Screenshots/06_MissingReceipts_POException.png)
-
-**Summary:**  
-This query identifies purchase orders where an invoice has been submitted but no receipt has been recorded in the system.  
-It exposes PO‑level match failures where the PO exists and the invoice exists, but Receiving has not confirmed the goods.  
-This prevents premature or incorrect payments, protects against paying for unreceived items, and highlights operational gaps between Receiving and AP.
 
 ## Query 7 — Aging Buckets
 
@@ -172,7 +163,7 @@ This report is essential for cash‑flow planning, vendor negotiations, and mont
 
 ## Query 8 — PaymentCycleTime.sql1
 
-![Payment Cycle Time](Screenshots/08_PaymentCycleTime.sql1.png)
+![Payment Cycle Time 1](Screenshots/08_PaymentCycleTime1.png)
 
 **Summary:**  
 This query calculates how long it takes for an invoice to be paid, measured from the invoice date to the payment date.  
@@ -184,7 +175,7 @@ This metric is a core AP performance indicator used for vendor scorecards, SLA t
 
 ## Query 08 (Version 2) — PaymentCycleTime.sql2
 
-![Payment Cycle Time](Screenshots/08_PaymentCycleTime.sql2.png)
+![Payment Cycle Time 2](Screenshots/08_PaymentCycleTime2.png)
 
 **Summary:**  
 This is the second version of the Payment Cycle Time query. It calculates the number of days between the invoice date and the payment date, then assigns each invoice to a cycle bucket (0–30, 31–60, 61–90, 90+).  
@@ -193,11 +184,9 @@ This version is optimized for clean documentation and fits in a single screensho
 
 ## Query 09 (Version 1) — APAutomationReadinessScore.sql (1)
 
-## Query 09 (Version 1) — APAutomationReadinessScore.sql (1)
 
-## Query 09 (Version 1) — APAutomationReadinessScore.sql (1)
 
-![AP Automation Readiness Score](Screenshots/09_APAutomationReadinessScore_sql1.png)
+![AP Automation Readiness Score 1](Screenshots/09_APAutomationReadinessScore1.png)
 
 **Summary:**  
 This version of the AP Automation Readiness Score evaluates how prepared each invoice is for straight‑through automation.  
@@ -213,7 +202,7 @@ This is the baseline scoring model used before refinements were introduced in Ve
 
 ## Query 09 (Version 2) — APAutomationReadinessScore.sql (2)
 
-![AP Automation Readiness Score](Screenshots/09_APAutomationReadinessScore_sql2.png)
+![AP Automation Readiness Score 2](Screenshots/09_APAutomationReadinessScore2.png)
 
 **Summary:**  
 This refined version of the AP Automation Readiness Score improves the logic from Version 1 by tightening exception thresholds, adjusting completeness weighting, and applying more consistent vendor data validation.  
